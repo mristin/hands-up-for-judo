@@ -279,7 +279,7 @@ export function newHandRaisingHandler(callback) {
 
         while (
             statusWindow.length > 0
-            && timestamp - statusWindow[0].timestamp > 1
+            && timestamp - statusWindow[0].timestamp > 1.5
             ) {
             statusWindow.shift();
         }
