@@ -11,7 +11,7 @@
 }
 
 .answer {
-    font-size: 10em;
+    font-size: 4em;
     font-family: "My Noto Color Emoji",
     apple color emoji,
     segoe ui emoji,
@@ -25,7 +25,7 @@
 }
 
 .answer > img {
-    height: 1em;
+    height: 4em;
 }
 
 #right-answer {
@@ -36,7 +36,11 @@
     border-top: 1px solid black;
     padding-top: 0.2em;
     margin-top: 0.2em;
-    font-size: 5em;
+    font-size: 3em;
+}
+
+#terrain > img {
+    height: 3em;
 }
 
 #score {
