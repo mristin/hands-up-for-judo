@@ -1450,8 +1450,7 @@ class DialoguePlay {
 }
 
 const bravoMessages = [
-    "待って. ブラボー！",
-    "待って. よくやった！"
+    "待って. 一本!",
 ]
 
 /**
