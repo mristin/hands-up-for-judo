@@ -50,7 +50,8 @@ const thiefMaxDistance = 10;
 
 /**
  * @typedef {Object} Level
- * @property {string} name of the level
+ * @property {string} caption to be displayed
+ * @property {string} name to be announced
  * @property {Array<Card>} vocabulary to be learnt
  */
 
@@ -59,50 +60,51 @@ const thiefMaxDistance = 10;
  */
 const levels = [
     {
-        name: "Yellow Belt (5th kyu)",
+        name: "黄色",
+        caption: "<img src='images/yellow-belt.png'> 黄色",
         vocabulary: [
             {
-                question: "harai goshi",
+                question: "払腰",
                 answer: "<img src='images/harai-goshi.jpg'>"
             },
             {
-                question: "kami shiho gatame",
+                question: "上四方固",
                 answer: "<img src='images/kami-shiho-gatame.jpg'>"
             },
             {
-                question: "ko uchi gari",
+                question: "小内刈",
                 answer: "<img src='images/ko-uchi-gari.jpg'>"
             },
             {
-                question: "kesa gatame",
+                question: "袈裟固",
                 answer: "<img src='images/kuzure-kesa-gatame.jpg'>"
             },
             {
-                question: "o soto gari",
+                question: "大外刈",
                 answer: "<img src='images/o-soto-gari.jpg'>"
             },
             {
-                question: "o soto otoshi",
+                question: "大外落",
                 answer: "<img src='images/o-soto-otoshi.jpg'>"
             },
             {
-                question: "o uchi gari",
+                question: "大内刈",
                 answer: "<img src='images/o-uchi-gari.jpg'>"
             },
             {
-                question: "tai otoshi",
+                question: "体落",
                 answer: "<img src='images/tai-otoshi.jpg'>"
             },
             {
-                question: "tahteh shio gatame",
+                question: "縦四方固め",
                 answer: "<img src='images/tate-shiho-gatame.jpg'>"
             },
             {
-                question: "uki goshi",
+                question: "浮腰",
                 answer: "<img src='images/uki-goshi.jpg'>"
             },
             {
-                question: "yoko shiho gatame",
+                question: "横四方固め",
                 answer: "<img src='images/yoko-shiho-gatame.png'>"
             },
         ]
@@ -461,11 +463,9 @@ Select the level:
                 `<button 
     id="level-${i}" 
     class="level-choice"
->${level.name}</button>`
+>${level.caption}</button>`
             )
         }
-
-        // TODO: add instructions
 
         return parts.join("\n");
     }
@@ -558,9 +558,7 @@ Select the level:
 }
 
 const hiMessages = [
-    "Hello! Let's start!",
-    "Hi! Let's get ready!",
-    "Ready. Steady. Go!"
+    "はじめ!"
 ]
 
 /**
@@ -570,7 +568,7 @@ const hiMessages = [
 class DialogueHello {
     initialHTML() {
         return `<div id="hello-container">
-    <div id="hello">👋 Hello! 👋</div>
+    <div id="hello">👋 はじめ ! 👋</div>
 </div>`;
     }
 
@@ -1018,11 +1016,8 @@ class DialoguePlay {
 }
 
 const bravoMessages = [
-    "Bravo!",
-    "Well done!",
-    "Good job!",
-    "Great job!",
-    "Congratulations!"
+    "待って. ブラボー！",
+    "待って. よくやった！"
 ]
 
 /**
@@ -1033,7 +1028,7 @@ class DialogueBravo {
 
     initialHTML() {
         return `<div id="bravo-container">
-    <div id="bravo">👏 Bravo! 👏</div>
+    <div id="bravo">👏 待って ! 👏</div>
     <button id="restart">Restart</button>
 </div>`;
     }
@@ -1148,7 +1143,7 @@ function setupSpeechSynthesis() {
 
     for (let i = 0; i < voices.length; i++) {
         const lang = voices[i].lang.toLowerCase();
-        if (lang === "en" || lang.startsWith("en-")) {
+        if (lang === "ja" || lang.startsWith("ja-")) {
             const voice = voices[i];
 
             if (systemState.speechSynthesisVoice !== voice) {
