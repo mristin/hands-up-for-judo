@@ -60,8 +60,38 @@ const thiefMaxDistance = 10;
  */
 const levels = [
     {
-        name: "黄色",
-        caption: "<img src='images/yellow-belt.png'> 黄色",
+      name: "8級",
+      caption: "<img src='images/half-yellow-belt.png'> 8級",
+      vocabulary: [
+          {
+              question: "体落",
+              answer: "<img src='images/tai-otoshi.jpg'>"
+          },
+          {
+              question: "大外落",
+              answer: "<img src='images/o-soto-otoshi.jpg'>"
+          },
+          {
+              question: "浮腰",
+              answer: "<img src='images/uki-goshi.jpg'>"
+          },
+          {
+              question: "横四方固め",
+              answer: "<img src='images/yoko-shiho-gatame.png'>"
+          },
+          {
+              question: "上四方固",
+              answer: "<img src='images/kami-shiho-gatame.jpg'>"
+          },
+          {
+              question: "袈裟固",
+              answer: "<img src='images/kuzure-kesa-gatame.jpg'>"
+          }
+      ]
+    },
+    {
+        name: "7級",
+        caption: "<img src='images/yellow-belt.png'> 7級",
         vocabulary: [
             {
                 question: "払腰",
@@ -109,7 +139,411 @@ const levels = [
             },
         ]
     },
+    {
+        name: "6級",
+        caption: "<img src='images/yellow-orange-belt.png'> 6級",
+        vocabulary: [
+            {
+                question: "後ろ受身",
+                answer: "<img src='images/ushiro-ukemi.png'>"
+            },
+            {
+                question: "横受け身",
+                answer: "<img src='images/yoko-ukemi.png'>"
+            },
+            {
+                question: "前回り受身",
+                answer: "<img src='images/mae-mawari-ukemi.jpg'>"
+            },
+            {
+                question: "大外刈",
+                answer: "<img src='images/o-soto-gari.jpg'>"
+            },
+            {
+                question: "小内刈",
+                answer: "<img src='images/ko-uchi-gari.jpg'>"
+            },
+            {
+                question: "体落",
+                answer: "<img src='images/tai-otoshi.jpg'>"
+            },
+            {
+                question: "一本背負投",
+                answer: "<img src='images/ippon-seoi-nage.jpg'>"
+            },
+            {
+                question: "払腰",
+                answer: "<img src='images/harai-goshi.jpg'>"
+            },
+            {
+                question: "釣込腰",
+                answer: "<img src='images/tsuri-komi-goshi.jpg'>"
+            },
+            {
+                question: "出足払",
+                answer: "<img src='images/de-ashi-barai.jpg'>"
+            },
+            {
+                question: "袈裟固",
+                answer: "<img src='images/kuzure-kesa-gatame.jpg'>"
+            },
+            {
+                question: "横四方固め",
+                answer: "<img src='images/yoko-shiho-gatame.png'>"
+            },
+            {
+                question: "肩固め",
+                answer: "<img src='images/kata-gatame.svg'>"
+            },
+            {
+                question: "縦四方固め",
+                answer: "<img src='images/tate-shiho-gatame.jpg'>"
+            },
 
+        ]
+    },
+    {
+        name: "5級",
+        caption: "<img src='images/orange-belt.png'> 5級",
+        vocabulary: [
+            {
+                question: "後ろ受身",
+                answer: "<img src='images/ushiro-ukemi.png'>"
+            },
+            {
+                question: "横受け身",
+                answer: "<img src='images/yoko-ukemi.png'>"
+            },
+            {
+                question: "前回り受身",
+                answer: "<img src='images/mae-mawari-ukemi.jpg'>"
+            },
+            {
+                question: "大外刈",
+                answer: "<img src='images/o-soto-gari.jpg'>"
+            },
+            {
+                question: "大内刈",
+                answer: "<img src='images/o-uchi-gari.jpg'>"
+            },
+            {
+                question: "体落",
+                answer: "<img src='images/tai-otoshi.jpg'>"
+            },
+            {
+                question: "小内刈",
+                answer: "<img src='images/ko-uchi-gari.jpg'>"
+            },
+            {
+                question: "浮腰",
+                answer: "<img src='images/uki-goshi.jpg'>"
+            },
+            {
+                question: "小外刈",
+                answer: "<img src='images/ko-soto-gari.png'>"
+            },
+            {
+                question: "小外掛",
+                answer: "<img src='images/ko-soto-gake.jpg'>"
+            },
+            {
+                question: "大腰",
+                answer: "<img src='images/o-goshi.jpg'>"
+            },
+            {
+                question: "払腰",
+                answer: "<img src='images/harai-goshi.jpg'>"
+            },
+            {
+                question: "出足払",
+                answer: "<img src='images/de-ashi-barai.jpg'>"
+            },
+            {
+                question: "一本背負投",
+                answer: "<img src='images/ippon-seoi-nage.jpg'>"
+            },
+            {
+                question: "釣込腰",
+                answer: "<img src='images/tsuri-komi-goshi.jpg'>"
+            },
+            {
+                question: "送足払",
+                answer: "<img src='images/okuri-ashi-barai.jpg'>"
+            },
+            {
+                question: "袈裟固",
+                answer: "<img src='images/kuzure-kesa-gatame.jpg'>"
+            },
+            {
+                question: "肩固め",
+                answer: "<img src='images/kata-gatame.svg'>"
+            },
+            {
+                question: "縦四方固め",
+                answer: "<img src='images/tate-shiho-gatame.jpg'>"
+            },
+            {
+                question: "横四方固め",
+                answer: "<img src='images/yoko-shiho-gatame.png'>"
+            },
+            {
+                question: "上四方固",
+                answer: "<img src='images/kami-shiho-gatame.jpg'>"
+            }
+        ]
+    },
+    {
+        name: "4級",
+        caption: "<img src='images/orange-green-belt.png'> 4級",
+        vocabulary: [
+            {
+                question: "後ろ受身",
+                answer: "<img src='images/ushiro-ukemi.png'>"
+            },
+            {
+                question: "横受け身",
+                answer: "<img src='images/yoko-ukemi.png'>"
+            },
+            {
+                question: "前回り受身",
+                answer: "<img src='images/mae-mawari-ukemi.jpg'>"
+            },
+            {
+                question: "大内刈",
+                answer: "<img src='images/o-uchi-gari.jpg'>"
+            },
+            {
+                question: "出足払",
+                answer: "<img src='images/de-ashi-barai.jpg'>"
+            },
+            {
+                question: "体落",
+                answer: "<img src='images/tai-otoshi.jpg'>"
+            },
+            {
+                question: "大腰",
+                answer: "<img src='images/o-goshi.jpg'>"
+            },
+            {
+                question: "大外刈",
+                answer: "<img src='images/o-soto-gari.jpg'>"
+            },
+            {
+                question: "小内刈",
+                answer: "<img src='images/ko-uchi-gari.jpg'>"
+            },
+            {
+                question: "送足払",
+                answer: "<img src='images/okuri-ashi-barai.jpg'>"
+            },
+            {
+                question: "浮腰",
+                answer: "<img src='images/uki-goshi.jpg'>"
+            },
+            {
+                question: "一本背負投",
+                answer: "<img src='images/ippon-seoi-nage.jpg'>"
+            },
+            {
+                question: "小外刈",
+                answer: "<img src='images/ko-soto-gari.png'>"
+            },
+            {
+                question: "払腰",
+                answer: "<img src='images/harai-goshi.jpg'>"
+            },
+            {
+                question: "支釣込足",
+                answer: "<img src='images/sasae-tsuri-komi-ashi.jpg'>"
+            },
+            {
+                question: "小内巻込",
+                answer: "<img src='images/ko-uchi-maki-komi.png'>"
+            },
+            {
+                question: "背負落",
+                answer: "<img src='images/seoi-otoshi.png'>"
+            },
+            {
+                question: "釣込腰",
+                answer: "<img src='images/tsuri-komi-goshi.jpg'>"
+            },
+            {
+                question: "膝車",
+                answer: "<img src='images/hiza-guruma.jpg'>"
+            },
+            {
+                question: "うちまた",
+                answer: "<img src='images/uchi-mata.jpg'>"
+            },
+            {
+                question: "双手背負い投げ",
+                answer: "<img src='images/morote-seoi-nage.jpg'>"
+            },
+            {
+                question: "横落",
+                answer: "<img src='images/yoko-otoshi.jpg'>"
+            },
+            {
+                question: "谷落",
+                answer: "<img src='images/tani-otoshi.jpg'>"
+            },
+            {
+                question: "巴投",
+                answer: "<img src='images/tomoe-nage.png'>"
+            },
+            {
+                question: "袈裟固",
+                answer: "<img src='images/kuzure-kesa-gatame.jpg'>"
+            },
+            {
+                question: "肩固め",
+                answer: "<img src='images/kata-gatame.svg'>"
+            },
+            {
+                question: "縦四方固め",
+                answer: "<img src='images/tate-shiho-gatame.jpg'>"
+            },
+            {
+                question: "横四方固め",
+                answer: "<img src='images/yoko-shiho-gatame.png'>"
+            },
+            {
+                question: "上四方固",
+                answer: "<img src='images/kami-shiho-gatame.jpg'>"
+            },
+            {
+                question: "腕挫十字固め",
+                answer: "<img src='images/ude-hishigi-juji-gatame.jpeg'>"
+            },
+        ]
+    },
+    {
+        name: "3級",
+        caption: "<img src='images/green-belt.png'> 3級",
+        vocabulary: [
+            {
+                question: "後ろ受身",
+                answer: "<img src='images/ushiro-ukemi.png'>"
+            },
+            {
+                question: "横受け身",
+                answer: "<img src='images/yoko-ukemi.png'>"
+            },
+            {
+                question: "前回り受身",
+                answer: "<img src='images/mae-mawari-ukemi.jpg'>"
+            },
+            {
+                question: "大外刈",
+                answer: "<img src='images/o-soto-gari.jpg'>"
+            },
+            {
+                question: "大内刈",
+                answer: "<img src='images/o-uchi-gari.jpg'>"
+            },
+            {
+                question: "体落",
+                answer: "<img src='images/tai-otoshi.jpg'>"
+            },
+            {
+                question: "膝車",
+                answer: "<img src='images/hiza-guruma.jpg'>"
+            },
+            {
+                question: "小内刈",
+                answer: "<img src='images/ko-uchi-gari.jpg'>"
+            },
+            {
+                question: "浮腰",
+                answer: "<img src='images/uki-goshi.jpg'>"
+            },
+            {
+                question: "大腰",
+                answer: "<img src='images/o-goshi.jpg'>"
+            },
+            {
+                question: "出足払",
+                answer: "<img src='images/de-ashi-barai.jpg'>"
+            },
+            {
+                question: "送足払",
+                answer: "<img src='images/okuri-ashi-barai.jpg'>"
+            },
+            {
+                question: "一本背負投",
+                answer: "<img src='images/ippon-seoi-nage.jpg'>"
+            },
+            {
+                question: "小外刈",
+                answer: "<img src='images/ko-soto-gari.png'>"
+            },
+            {
+                question: "払腰",
+                answer: "<img src='images/harai-goshi.jpg'>"
+            },
+            {
+                question: "諸手背負い投げ",
+                answer: "<img src='images/morote-seoi-nage.jpg'>"
+            },
+            {
+                question: "背負落",
+                answer: "<img src='images/seoi-otoshi.png'>"
+            },
+            {
+                question: "小内巻込",
+                answer: "<img src='images/ko-uchi-maki-komi.png'>"
+            },
+            {
+                question: "支釣込足",
+                answer: "<img src='images/sasae-tsuri-komi-ashi.jpg'>"
+            },
+            {
+                question: "うちまた",
+                answer: "<img src='images/uchi-mata.jpg'>"
+            },
+            {
+                question: "巴投",
+                answer: "<img src='images/tomoe-nage.png'>"
+            },
+            {
+                question: "谷落",
+                answer: "<img src='images/tani-otoshi.jpg'>"
+            },
+            {
+                question: "横落",
+                answer: "<img src='images/yoko-otoshi.jpg'>"
+            },
+            {
+                question: "釣込腰",
+                answer: "<img src='images/tsuri-komi-goshi.jpg'>"
+            },
+            {
+                question: "袈裟固",
+                answer: "<img src='images/kuzure-kesa-gatame.jpg'>"
+            },
+            {
+                question: "肩固め",
+                answer: "<img src='images/kata-gatame.svg'>"
+            },
+            {
+                question: "縦四方固め",
+                answer: "<img src='images/tate-shiho-gatame.jpg'>"
+            },
+            {
+                question: "横四方固め",
+                answer: "<img src='images/yoko-shiho-gatame.png'>"
+            },
+            {
+                question: "上四方固",
+                answer: "<img src='images/kami-shiho-gatame.jpg'>"
+            },
+            {
+                question: "腕挫十字固め",
+                answer: "<img src='images/ude-hishigi-juji-gatame.jpeg'>"
+            }
+        ]
+    }
 ];
 
 if (levels.length === 0) {
