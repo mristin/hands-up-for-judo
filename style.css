@@ -100,7 +100,10 @@
 }
 
 .level-choice {
-    font-size: 3em;
+    font-size: 2em;
+}
+.level-choice > img {
+    height: 2em;
 }
 
 .level-choice:hover {
