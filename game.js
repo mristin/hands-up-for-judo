@@ -60,426 +60,426 @@ const thiefMaxDistance = 10;
  */
 const levels = [
     {
-      name: "8級",
-      caption: "<img src='images/half-yellow-belt.png'> 8級",
-      vocabulary: [
-          {
-              question: "体落",
-              answer: "<img src='images/tai-otoshi.jpg'>"
-          },
-          {
-              question: "大外落",
-              answer: "<img src='images/o-soto-otoshi.jpg'>"
-          },
-          {
-              question: "浮腰",
-              answer: "<img src='images/uki-goshi.jpg'>"
-          },
-          {
-              question: "横四方固め",
-              answer: "<img src='images/yoko-shiho-gatame.png'>"
-          },
-          {
-              question: "上四方固",
-              answer: "<img src='images/kami-shiho-gatame.jpg'>"
-          },
-          {
-              question: "袈裟固",
-              answer: "<img src='images/kuzure-kesa-gatame.jpg'>"
-          }
-      ]
-    },
-    {
-        name: "7級",
-        caption: "<img src='images/yellow-belt.png'> 7級",
+        name: "8-Kyū",
+        caption: "<img src='images/half-yellow-belt.png'> 8級",
         vocabulary: [
             {
-                question: "払腰",
-                answer: "<img src='images/harai-goshi.jpg'>"
-            },
-            {
-                question: "上四方固",
-                answer: "<img src='images/kami-shiho-gatame.jpg'>"
-            },
-            {
-                question: "小内刈",
-                answer: "<img src='images/ko-uchi-gari.jpg'>"
-            },
-            {
-                question: "袈裟固",
-                answer: "<img src='images/kuzure-kesa-gatame.jpg'>"
-            },
-            {
-                question: "大外刈",
-                answer: "<img src='images/o-soto-gari.jpg'>"
-            },
-            {
-                question: "大外落",
-                answer: "<img src='images/o-soto-otoshi.jpg'>"
-            },
-            {
-                question: "大内刈",
-                answer: "<img src='images/o-uchi-gari.jpg'>"
-            },
-            {
-                question: "体落",
+                question: "Taiotoshi",
                 answer: "<img src='images/tai-otoshi.jpg'>"
             },
             {
-                question: "縦四方固め",
-                answer: "<img src='images/tate-shiho-gatame.jpg'>"
+                question: "Ōsotootoshi",
+                answer: "<img src='images/o-soto-otoshi.jpg'>"
             },
             {
-                question: "浮腰",
+                question: "Ukigoshi",
                 answer: "<img src='images/uki-goshi.jpg'>"
             },
             {
-                question: "横四方固め",
+                question: "Yokoshihōgatame",
+                answer: "<img src='images/yoko-shiho-gatame.png'>"
+            },
+            {
+                question: "Kamishihōgatame",
+                answer: "<img src='images/kami-shiho-gatame.jpg'>"
+            },
+            {
+                question: "Kesagatame",
+                answer: "<img src='images/kuzure-kesa-gatame.jpg'>"
+            }
+        ]
+    },
+    {
+        name: "7-Kyū",
+        caption: "<img src='images/yellow-belt.png'> 7級",
+        vocabulary: [
+            {
+                question: "Haraigoshi",
+                answer: "<img src='images/harai-goshi.jpg'>"
+            },
+            {
+                question: "Kamishihōgatame",
+                answer: "<img src='images/kami-shiho-gatame.jpg'>"
+            },
+            {
+                question: "Kouchigari",
+                answer: "<img src='images/ko-uchi-gari.jpg'>"
+            },
+            {
+                question: "Kesagatame",
+                answer: "<img src='images/kuzure-kesa-gatame.jpg'>"
+            },
+            {
+                question: "Ōsotogari",
+                answer: "<img src='images/o-soto-gari.jpg'>"
+            },
+            {
+                question: "Ōsotootoshi",
+                answer: "<img src='images/o-soto-otoshi.jpg'>"
+            },
+            {
+                question: "Ōuchi gari",
+                answer: "<img src='images/o-uchi-gari.jpg'>"
+            },
+            {
+                question: "Taiotoshi",
+                answer: "<img src='images/tai-otoshi.jpg'>"
+            },
+            {
+                question: "Tateshihōgatame",
+                answer: "<img src='images/tate-shiho-gatame.jpg'>"
+            },
+            {
+                question: "Ukigoshi",
+                answer: "<img src='images/uki-goshi.jpg'>"
+            },
+            {
+                question: "Yokoshihōgatame",
                 answer: "<img src='images/yoko-shiho-gatame.png'>"
             },
         ]
     },
     {
-        name: "6級",
+        name: "6-Kyū",
         caption: "<img src='images/yellow-orange-belt.png'> 6級",
         vocabulary: [
             {
-                question: "後ろ受身",
+                question: "Ushiro ukemi",
                 answer: "<img src='images/ushiro-ukemi.png'>"
             },
             {
-                question: "横受け身",
+                question: "Yoko ukemi",
                 answer: "<img src='images/yoko-ukemi.png'>"
             },
             {
-                question: "前回り受身",
+                question: "Maemawariukemi",
                 answer: "<img src='images/mae-mawari-ukemi.jpg'>"
             },
             {
-                question: "大外刈",
+                question: "Ōsotogari",
                 answer: "<img src='images/o-soto-gari.jpg'>"
             },
             {
-                question: "小内刈",
+                question: "Kouchigari",
                 answer: "<img src='images/ko-uchi-gari.jpg'>"
             },
             {
-                question: "体落",
+                question: "Taiotoshi",
                 answer: "<img src='images/tai-otoshi.jpg'>"
             },
             {
-                question: "一本背負投",
+                question: "Ipponseoinage",
                 answer: "<img src='images/ippon-seoi-nage.jpg'>"
             },
             {
-                question: "払腰",
+                question: "Haraigoshi",
                 answer: "<img src='images/harai-goshi.jpg'>"
             },
             {
-                question: "釣込腰",
+                question: "Tsurikomigoshi",
                 answer: "<img src='images/tsuri-komi-goshi.jpg'>"
             },
             {
-                question: "出足払",
+                question: "Deashibarai",
                 answer: "<img src='images/de-ashi-barai.jpg'>"
             },
             {
-                question: "袈裟固",
+                question: "Kesagatame",
                 answer: "<img src='images/kuzure-kesa-gatame.jpg'>"
             },
             {
-                question: "横四方固め",
+                question: "Yokoshihōgatame",
                 answer: "<img src='images/yoko-shiho-gatame.png'>"
             },
             {
-                question: "肩固め",
+                question: "Kata gatame",
                 answer: "<img src='images/kata-gatame.svg'>"
             },
             {
-                question: "縦四方固め",
+                question: "Tateshihōgatame",
                 answer: "<img src='images/tate-shiho-gatame.jpg'>"
             },
 
         ]
     },
     {
-        name: "5級",
+        name: "5-Kyū",
         caption: "<img src='images/orange-belt.png'> 5級",
         vocabulary: [
             {
-                question: "後ろ受身",
+                question: "Ushiro ukemi",
                 answer: "<img src='images/ushiro-ukemi.png'>"
             },
             {
-                question: "横受け身",
+                question: "Yoko ukemi",
                 answer: "<img src='images/yoko-ukemi.png'>"
             },
             {
-                question: "前回り受身",
+                question: "Maemawariukemi",
                 answer: "<img src='images/mae-mawari-ukemi.jpg'>"
             },
             {
-                question: "大外刈",
+                question: "Ōsotogari",
                 answer: "<img src='images/o-soto-gari.jpg'>"
             },
             {
-                question: "大内刈",
+                question: "Ōuchi gari",
                 answer: "<img src='images/o-uchi-gari.jpg'>"
             },
             {
-                question: "体落",
+                question: "Taiotoshi",
                 answer: "<img src='images/tai-otoshi.jpg'>"
             },
             {
-                question: "小内刈",
+                question: "Kouchigari",
                 answer: "<img src='images/ko-uchi-gari.jpg'>"
             },
             {
-                question: "浮腰",
+                question: "Ukigoshi",
                 answer: "<img src='images/uki-goshi.jpg'>"
             },
             {
-                question: "小外刈",
+                question: "Kosotogari",
                 answer: "<img src='images/ko-soto-gari.png'>"
             },
             {
-                question: "小外掛",
+                question: "Kosotogake",
                 answer: "<img src='images/ko-soto-gake.jpg'>"
             },
             {
-                question: "大腰",
+                question: "Ōgoshi",
                 answer: "<img src='images/o-goshi.jpg'>"
             },
             {
-                question: "払腰",
+                question: "Haraigoshi",
                 answer: "<img src='images/harai-goshi.jpg'>"
             },
             {
-                question: "出足払",
+                question: "Deashibarai",
                 answer: "<img src='images/de-ashi-barai.jpg'>"
             },
             {
-                question: "一本背負投",
+                question: "Ipponseoinage",
                 answer: "<img src='images/ippon-seoi-nage.jpg'>"
             },
             {
-                question: "釣込腰",
+                question: "Tsurikomigoshi",
                 answer: "<img src='images/tsuri-komi-goshi.jpg'>"
             },
             {
-                question: "送足払",
+                question: "Okuriashiharai",
                 answer: "<img src='images/okuri-ashi-barai.jpg'>"
             },
             {
-                question: "袈裟固",
+                question: "Kesagatame",
                 answer: "<img src='images/kuzure-kesa-gatame.jpg'>"
             },
             {
-                question: "肩固め",
+                question: "Kata katame",
                 answer: "<img src='images/kata-gatame.svg'>"
             },
             {
-                question: "縦四方固め",
+                question: "Tateshihōgatame",
                 answer: "<img src='images/tate-shiho-gatame.jpg'>"
             },
             {
-                question: "横四方固め",
+                question: "Yokoshihōgatame",
                 answer: "<img src='images/yoko-shiho-gatame.png'>"
             },
             {
-                question: "上四方固",
+                question: "Kamishihōgatame",
                 answer: "<img src='images/kami-shiho-gatame.jpg'>"
             }
         ]
     },
     {
-        name: "4級",
+        name: "4-Kyū",
         caption: "<img src='images/orange-green-belt.png'> 4級",
         vocabulary: [
             {
-                question: "後ろ受身",
+                question: "Ushiro ukemi",
                 answer: "<img src='images/ushiro-ukemi.png'>"
             },
             {
-                question: "横受け身",
+                question: "Yoko ukemi",
                 answer: "<img src='images/yoko-ukemi.png'>"
             },
             {
-                question: "前回り受身",
+                question: "Maemawariukemi",
                 answer: "<img src='images/mae-mawari-ukemi.jpg'>"
             },
             {
-                question: "大内刈",
+                question: "Ōuchi gari",
                 answer: "<img src='images/o-uchi-gari.jpg'>"
             },
             {
-                question: "出足払",
+                question: "Deashibarai",
                 answer: "<img src='images/de-ashi-barai.jpg'>"
             },
             {
-                question: "体落",
+                question: "Taiotoshi",
                 answer: "<img src='images/tai-otoshi.jpg'>"
             },
             {
-                question: "大腰",
+                question: "Ōgoshi",
                 answer: "<img src='images/o-goshi.jpg'>"
             },
             {
-                question: "大外刈",
+                question: "Ōsotogari",
                 answer: "<img src='images/o-soto-gari.jpg'>"
             },
             {
-                question: "小内刈",
+                question: "Kouchigari",
                 answer: "<img src='images/ko-uchi-gari.jpg'>"
             },
             {
-                question: "送足払",
+                question: "Okuriashiharai",
                 answer: "<img src='images/okuri-ashi-barai.jpg'>"
             },
             {
-                question: "浮腰",
+                question: "Ukigoshi",
                 answer: "<img src='images/uki-goshi.jpg'>"
             },
             {
-                question: "一本背負投",
+                question: "Ipponseoinage",
                 answer: "<img src='images/ippon-seoi-nage.jpg'>"
             },
             {
-                question: "小外刈",
+                question: "Kosotogari",
                 answer: "<img src='images/ko-soto-gari.png'>"
             },
             {
-                question: "払腰",
+                question: "Haraigoshi",
                 answer: "<img src='images/harai-goshi.jpg'>"
             },
             {
-                question: "支釣込足",
+                question: "Sasaetsurikomiashi",
                 answer: "<img src='images/sasae-tsuri-komi-ashi.jpg'>"
             },
             {
-                question: "小内巻込",
+                question: "Kouchimakikomi",
                 answer: "<img src='images/ko-uchi-maki-komi.png'>"
             },
             {
-                question: "背負落",
+                question: "Seoiotoshi",
                 answer: "<img src='images/seoi-otoshi.png'>"
             },
             {
-                question: "釣込腰",
+                question: "Tsurikomigoshi",
                 answer: "<img src='images/tsuri-komi-goshi.jpg'>"
             },
             {
-                question: "膝車",
+                question: "Hizaguruma",
                 answer: "<img src='images/hiza-guruma.jpg'>"
             },
             {
-                question: "うちまた",
+                question: "Uchi mata",
                 answer: "<img src='images/uchi-mata.jpg'>"
             },
             {
-                question: "双手背負い投げ",
+                question: "Moroteseoinage",
                 answer: "<img src='images/morote-seoi-nage.jpg'>"
             },
             {
-                question: "横落",
+                question: "Yokootoshi",
                 answer: "<img src='images/yoko-otoshi.jpg'>"
             },
             {
-                question: "谷落",
+                question: "Tani otoshi",
                 answer: "<img src='images/tani-otoshi.jpg'>"
             },
             {
-                question: "巴投",
+                question: "Tomoenage",
                 answer: "<img src='images/tomoe-nage.png'>"
             },
             {
-                question: "袈裟固",
+                question: "Kesagatame",
                 answer: "<img src='images/kuzure-kesa-gatame.jpg'>"
             },
             {
-                question: "肩固め",
+                question: "Kata gatame",
                 answer: "<img src='images/kata-gatame.svg'>"
             },
             {
-                question: "縦四方固め",
+                question: "Tateshihōgatame",
                 answer: "<img src='images/tate-shiho-gatame.jpg'>"
             },
             {
-                question: "横四方固め",
+                question: "Yokoshihōgatame",
                 answer: "<img src='images/yoko-shiho-gatame.png'>"
             },
             {
-                question: "上四方固",
+                question: "Kamishihōgatame",
                 answer: "<img src='images/kami-shiho-gatame.jpg'>"
             },
             {
-                question: "腕挫十字固め",
+                question: "Ude-hishigi-juji-gatame",
                 answer: "<img src='images/ude-hishigi-juji-gatame.jpeg'>"
             },
         ]
     },
     {
-        name: "3級",
+        name: "3-Kyū",
         caption: "<img src='images/green-belt.png'> 3級",
         vocabulary: [
             {
-                question: "後ろ受身",
+                question: "Ushiro ukemi",
                 answer: "<img src='images/ushiro-ukemi.png'>"
             },
             {
-                question: "横受け身",
+                question: "Yoko ukemi",
                 answer: "<img src='images/yoko-ukemi.png'>"
             },
             {
-                question: "前回り受身",
+                question: "Maemawariukemi",
                 answer: "<img src='images/mae-mawari-ukemi.jpg'>"
             },
             {
-                question: "大外刈",
+                question: "Ōsotogari",
                 answer: "<img src='images/o-soto-gari.jpg'>"
             },
             {
-                question: "大内刈",
+                question: "Ōuchi gari",
                 answer: "<img src='images/o-uchi-gari.jpg'>"
             },
             {
-                question: "体落",
+                question: "Taiotoshi",
                 answer: "<img src='images/tai-otoshi.jpg'>"
             },
             {
-                question: "膝車",
+                question: "Hizaguruma",
                 answer: "<img src='images/hiza-guruma.jpg'>"
             },
             {
-                question: "小内刈",
+                question: "Kouchigari",
                 answer: "<img src='images/ko-uchi-gari.jpg'>"
             },
             {
-                question: "浮腰",
+                question: "Ukigoshi",
                 answer: "<img src='images/uki-goshi.jpg'>"
             },
             {
-                question: "大腰",
+                question: "Ōgoshi",
                 answer: "<img src='images/o-goshi.jpg'>"
             },
             {
-                question: "出足払",
+                question: "Deashibarai",
                 answer: "<img src='images/de-ashi-barai.jpg'>"
             },
             {
-                question: "送足払",
+                question: "Okuriashiharai",
                 answer: "<img src='images/okuri-ashi-barai.jpg'>"
             },
             {
-                question: "一本背負投",
+                question: "Ipponseoinage",
                 answer: "<img src='images/ippon-seoi-nage.jpg'>"
             },
             {
-                question: "小外刈",
+                question: "Kosotogari",
                 answer: "<img src='images/ko-soto-gari.png'>"
             },
             {
-                question: "払腰",
+                question: "Haraigoshi",
                 answer: "<img src='images/harai-goshi.jpg'>"
             },
             {
@@ -487,59 +487,59 @@ const levels = [
                 answer: "<img src='images/morote-seoi-nage.jpg'>"
             },
             {
-                question: "背負落",
+                question: "Seoiotoshi",
                 answer: "<img src='images/seoi-otoshi.png'>"
             },
             {
-                question: "小内巻込",
+                question: "Kouchimakikomi",
                 answer: "<img src='images/ko-uchi-maki-komi.png'>"
             },
             {
-                question: "支釣込足",
+                question: "Sasaetsurikomiashi",
                 answer: "<img src='images/sasae-tsuri-komi-ashi.jpg'>"
             },
             {
-                question: "うちまた",
+                question: "Uchi mata",
                 answer: "<img src='images/uchi-mata.jpg'>"
             },
             {
-                question: "巴投",
+                question: "Tomoenage",
                 answer: "<img src='images/tomoe-nage.png'>"
             },
             {
-                question: "谷落",
+                question: "Tani otoshi",
                 answer: "<img src='images/tani-otoshi.jpg'>"
             },
             {
-                question: "横落",
+                question: "Yokootoshi",
                 answer: "<img src='images/yoko-otoshi.jpg'>"
             },
             {
-                question: "釣込腰",
+                question: "Tsurikomigoshi",
                 answer: "<img src='images/tsuri-komi-goshi.jpg'>"
             },
             {
-                question: "袈裟固",
+                question: "Kesagatame",
                 answer: "<img src='images/kuzure-kesa-gatame.jpg'>"
             },
             {
-                question: "肩固め",
+                question: "Kata gatame",
                 answer: "<img src='images/kata-gatame.svg'>"
             },
             {
-                question: "縦四方固め",
+                question: "Tateshihōgatame",
                 answer: "<img src='images/tate-shiho-gatame.jpg'>"
             },
             {
-                question: "横四方固め",
+                question: "Yokoshihōgatame",
                 answer: "<img src='images/yoko-shiho-gatame.png'>"
             },
             {
-                question: "上四方固",
+                question: "Kamishihōgatame",
                 answer: "<img src='images/kami-shiho-gatame.jpg'>"
             },
             {
-                question: "腕挫十字固め",
+                question: "Ude-hishigi-juji-gatame",
                 answer: "<img src='images/ude-hishigi-juji-gatame.jpeg'>"
             }
         ]
